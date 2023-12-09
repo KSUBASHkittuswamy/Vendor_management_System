@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "383ae4ce-72af-4b79-a811-2c5e995ff219",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31694785"
+	},
+	"item": [
+		{
+			"name": "PostVendor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "subash",
+							"type": "text"
+						},
+						{
+							"key": "contact_details",
+							"value": "756465365",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "coimbatore",
+							"type": "text"
+						},
+						{
+							"key": "vendor_code",
+							"value": "Ve002",
+							"type": "text"
+						},
+						{
+							"key": "on_time_delivery_rate",
+							"value": "564",
+							"type": "text"
+						},
+						{
+							"key": "quality_rating_avg",
+							"value": "757",
+							"type": "text"
+						},
+						{
+							"key": "average_response_time",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "fulfillment_rate",
+							"value": "54",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/vendor/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"vendor",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"disabled": true
+						},
+						{
+							"key": "contact_details",
+							"value": "76466546565",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "Erode",
+							"disabled": true
+						},
+						{
+							"key": "vendor_code",
+							"value": "2341",
+							"disabled": true
+						},
+						{
+							"key": "on_time_delivery_rate",
+							"value": "12",
+							"disabled": true
+						},
+						{
+							"key": "quality_rating_avg",
+							"value": "677",
+							"disabled": true
+						},
+						{
+							"key": "average_response_time",
+							"value": "654",
+							"disabled": true
+						},
+						{
+							"key": "fulfillment_rate",
+							"value": "534",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Put Vendor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "subashTest",
+							"type": "text"
+						},
+						{
+							"key": "contact_details",
+							"value": "3534543",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "coimbatore",
+							"type": "text"
+						},
+						{
+							"key": "vendor_code",
+							"value": "Ve001",
+							"type": "text"
+						},
+						{
+							"key": "on_time_delivery_rate",
+							"value": "333",
+							"type": "text"
+						},
+						{
+							"key": "quality_rating_avg",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "average_response_time",
+							"value": "344",
+							"type": "text"
+						},
+						{
+							"key": "fulfillment_rate",
+							"value": "22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/Put/vendor/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Put",
+						"vendor",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vendor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete/vendor/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"vendor",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Purchase Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "po_number",
+							"value": "PO0001",
+							"type": "text"
+						},
+						{
+							"key": "vendor",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "order_date",
+							"value": "2023-12-05T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "delivery_date",
+							"value": "2023-12-05T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "items",
+							"value": "{'item1':'Pen'}",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "completed",
+							"type": "text"
+						},
+						{
+							"key": "quality_rating",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "issue_date",
+							"value": "2023-11-25T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "acknowledgment_date",
+							"value": "2023-11-28T00:00:00Z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/purchase_orders/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"purchase_orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get PurchaseOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get/purchase_orders/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get",
+						"purchase_orders",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put PurchaseOrder",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "po_number",
+							"value": "PO0001",
+							"type": "text"
+						},
+						{
+							"key": "vendor",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "order_date",
+							"value": "2023-12-05T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "delivery_date",
+							"value": "2023-12-05T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "items",
+							"value": "{'item1':'Pen'}",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "completed",
+							"type": "text"
+						},
+						{
+							"key": "quality_rating",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "issue_date",
+							"value": "2023-11-25T00:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "acknowledgment_date",
+							"value": "2023-11-28T00:00:00Z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/put/purchase_orders/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"put",
+						"purchase_orders",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Purchase Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete/purchase_orders/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"purchase_orders",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Performance History",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
